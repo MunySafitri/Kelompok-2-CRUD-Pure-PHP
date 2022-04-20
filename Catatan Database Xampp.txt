@@ -1,0 +1,25 @@
+
+buka xamp
+
+jalani apache sama sql
+buka shell sql
+
+mysql -u root -p
+enter password
+
+create database CRUD;
+
+USE CRUD;
+
+CREATE TABLE `user` (  `id_user` int(11) NOT NULL,  `username` varchar(9) NOT NULL,  `password` varchar(128) NOT NULL);
+
+INSERT INTO `mahasiswa` (`id`, `nrp`, `nama`, `email`, `jurusan`, `gambar`) VALUES(1, '2008107064', 'Muny Safitri', 'munysafitri@gmail.com', 'Informatika', 'muny.jpeg'),
+    (2, '2008107022', 'Safira', 'safiraa@gmail.com', 'Informatika', 'sapii.jpeg');
+
+
+Note
+berinama fie yang diektrak ini dengan nama folder Kelompok-2
+Salin folder ini di c:xampp/htdocs/Kelompok-2
+
+pengujian
+localhost/Kelompok-2
