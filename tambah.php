@@ -28,38 +28,67 @@ if( isset($_POST["submit"]) ) {
 <html>
 <head>
 	<title>Tambah data mahasiswa</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
 </head>
 <body>
-	<h1>Tambah data mahasiswa</h1>
+	<nav>
+		<div class="wrapper">
+			<div class="logo"><a href="">Data Mahasiswa</a></div>
+			<div class="menu">
+				<ul>
+					<li><a href="index.php"">Home</a></li>
+					<li><a href="#Contact">Contact</a></li> 
+					<li><a href="#About">About</a></li>
+					<li><a href="#Sosial">Help</a></li>
+					<li><a href="" class="tbl-hijau">Log out</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div style="height:500px">
+		<h1>Tambah data mahasiswa</h1>
 
-	<form action="" method="post" enctype="multipart/form-data">
-		<ul>
-			<li>
-				<label for="nrp">NRP : </label>
-				<input type="text" name="nrp" id="nrp" required>
-			</li>
-			<li>
-				<label for="nama">Nama : </label>
-				<input type="text" name="nama" id="nama">
-			</li>
-			<li>
-				<label for="email">Email :</label>
-				<input type="text" name="email" id="email">
-			</li>
-			<li>
-				<label for="jurusan">Jurusan :</label>
-				<input type="text" name="jurusan" id="jurusan">
-			</li>
-			<li>
-				<label for="gambar">Gambar :</label>
-				<input type="file" name="gambar" id="gambar">
-			</li>
-			<li>
-				<button type="submit" name="submit">Tambah Data!</button>
-			</li>
-		</ul>
+		<form action="" method="post" enctype="multipart/form-data" class="nosubmit position-relative">
+			<ul>
+				<li>
+					<label for="nrp">NRP : </label>
+					<input size="40" autofocus placeholder="Masukkan NRP.." autocomplete="off" class="form-control  " style="width:30%; " type="text" name="nrp" id="nrp" required>
+				</li>
+				<li>
+					<label for="nama">Nama : </label>
+					<input size="40" autofocus placeholder="Masukkan Nama.." autocomplete="off" class="form-control  " style="width:30%; " type="text" name="nama" id="nama">
+				</li>
+				<li>
+					<label for="email">Email :</label>
+					<input size="40" autofocus placeholder="Masukkan Email.." autocomplete="off" class="form-control  " style="width:30%; " type="text" name="email" id="email">
+				</li>
+				<li>
+					<label for="jurusan">Jurusan :</label>
+					<input size="40" autofocus placeholder="Masukkan Jurusan.." autocomplete="off" class="form-control  " style="width:30%; " type="text" name="jurusan" id="jurusan">
+				</li>
+				<li>
+					<label for="gambar">Gambar :</label>
+					<input size="40"  autocomplete="off" class="form-control  " style="width:30%; " type="file" name="gambar" id="gambar">
+				</li>
+				<li>
+					<button type="submit" name="submit" class="btn btn-teal me-2 me-auto mb-2 " style="background:green;color:white ">Tambah Data!</button>
+				</li>
+			</ul>
 
-	</form>
+		</form>
+	</div>
+
+	<div id="copyright" class="footer" style="background-color:rgb(104, 131, 140);">
+        <div class="wrapper">
+            &copy; 2022. <b>Kelompok-2</b> All Right Reserve
+        </div>
+    </div>
 
 
 
