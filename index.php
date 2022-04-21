@@ -1,6 +1,5 @@
 <?php 
 require 'functions.php';
-session_start();
 
 //algoritma untuk pagination
 $jumlahDataPerhalaman = 4;
@@ -21,6 +20,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa LIMIT $awalData ,$jumlahDataPerhalam
 if( isset($_POST["cari"]) ) {
 	$mahasiswa = cari($_POST["keyword"]);
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -47,13 +47,7 @@ if( isset($_POST["cari"]) ) {
 				<li><a href="#Contact">Contact</a></li> 
 				<li><a href="#About">About</a></li>
 				<li><a href="#Sosial">Help</a></li>
-				<?php 
-				if($_SESSION["loggedIn"] == true){
-				echo "<li><a href=\"./logout.php\" class=\"tbl-hijau\">Logout</a></li>";
-				}
-				else{
-				echo "<li><a href=\"./login.php\" class=\"tbl-hijau\">Login</a></li>";
-				} ?>
+				<li><a href="" class="tbl-hijau">Log out</a></li>
 			</ul>
 		</div>
 	</div>
@@ -70,14 +64,7 @@ if( isset($_POST["cari"]) ) {
 		<button type="submit" name="cari" class="btn btn-teal me-2 me-auto mb-2 " style="background:green;color:white ">Cari!</button>
 		
 		<br><br>
-		<?php 
-		if($_SESSION["loggedIn"] == true){
-			echo "<a class=\"tbl-hijau\" href=\"tambah.php\">Tambah</a>";
-		}
-		else{
-			echo "<a>Login terlebih dahulu untuk menambahkan data!</a>";
-		}
-		?>
+		<a class="tbl-hijau" href="tambah.php">Tambah</a>
 		<br>
 
 	</form>
