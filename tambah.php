@@ -1,6 +1,9 @@
 <?php
 require 'functions.php';
 
+if(isset($_SESSION['loggedIn']) != true){ 
+    header("Location: index.php");
+}
 // cek apakah tombol submit sudah ditekan atau belum
 if( isset($_POST["submit"]) ) {
 	
@@ -42,7 +45,7 @@ if( isset($_POST["submit"]) ) {
 			<div class="logo"><a href="">Data Mahasiswa</a></div>
 			<div class="menu">
 				<ul>
-					<li><a href="index.php"">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					<li><a href="#Contact">Contact</a></li> 
 					<li><a href="#About">About</a></li>
 					<li><a href="#Sosial">Help</a></li>

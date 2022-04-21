@@ -1,6 +1,10 @@
 <?php
 require 'functions.php';
 
+if(isset($_SESSION['loggedIn']) == true){ 
+    header("Location: index.php");
+}
+
 // ambil data di URL
 $id = $_GET["id"];
 

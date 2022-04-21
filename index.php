@@ -1,5 +1,6 @@
 <?php 
 require 'functions.php';
+session_start();
 
 //algoritma untuk pagination
 $jumlahDataPerhalaman = 4;
@@ -47,7 +48,7 @@ if( isset($_POST["cari"]) ) {
 				<li><a href="#Contact">Contact</a></li> 
 				<li><a href="#About">About</a></li>
 				<li><a href="#Sosial">Help</a></li>
-				<li><a href="" class="tbl-hijau">Log out</a></li>
+				<li><a href="./login.php" class="tbl-hijau">Login</a></li>
 			</ul>
 		</div>
 	</div>
@@ -64,7 +65,7 @@ if( isset($_POST["cari"]) ) {
 		<button type="submit" name="cari" class="btn btn-teal me-2 me-auto mb-2 " style="background:green;color:white ">Cari!</button>
 		
 		<br><br>
-		<a class="tbl-hijau" href="tambah.php">Tambah</a>
+		<a>Login terlebih dahulu untuk menambahkan data!</a>
 		<br>
 
 	</form>
@@ -74,7 +75,6 @@ if( isset($_POST["cari"]) ) {
 
 		<tr>
 			<th>No.</th>
-			<th>Aksi</th>
 			<th>Gambar</th>
 			<th>NRP</th>
 			<th>Nama</th>
@@ -87,10 +87,6 @@ if( isset($_POST["cari"]) ) {
 		<?php foreach( $mahasiswa as $row ) : ?>
 		<tr>
 			<td><?= $i; ?></td>
-			<td>
-				<a href="ubah.php?id=<?= $row["id"]; ?>" class="ubah">ubah</a> |
-				<a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('yakin?');" class="hapus">hapus</a>
-			</td>
 			<td><img src="img/<?= $row["gambar"]; ?>" width="100px" height="120px"></td>
 			<td><?= $row["nrp"]; ?></td>
 			<td><?= $row["nama"]; ?></td>

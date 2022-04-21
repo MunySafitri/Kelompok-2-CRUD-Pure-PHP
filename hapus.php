@@ -1,5 +1,8 @@
 <?php 
 require 'functions.php';
+if(isset($_SESSION['loggedIn']) == true){ 
+    header("Location: index.php");
+}
 
 $id = $_GET["id"];
 
