@@ -1,7 +1,8 @@
 <?php
 require 'functions.php';
+session_start();
 
-if(isset($_SESSION['loggedIn']) == true){ 
+if(isset($_SESSION['loggedIn']) != true){ 
     header("Location: index.php");
 }
 
@@ -20,14 +21,14 @@ if( isset($_POST["submit"]) ) {
 		echo "
 			<script>
 				alert('data berhasil diubah!');
-				document.location.href = 'index.php';
+				document.location.href = 'home.php';
 			</script>
 		";
 	} else {
 		echo "
 			<script>
 				alert('data gagal diubah!');
-				document.location.href = 'index.php';
+				document.location.href = 'home.php';
 			</script>
 		";
 	}
@@ -50,15 +51,15 @@ if( isset($_POST["submit"]) ) {
 <body>
 	<nav>
 		<div class="wrapper">
-			<div class="logo"><a href="">Data Mahasiswa</a></div>
+			<div class="logo"><a href="">Ubah Data Mahasiswa</a></div>
 			<div class="menu">
-				<ul>
-					<li><a href="index.php"">Home</a></li>
-					<li><a href="#Contact">Contact</a></li> 
-					<li><a href="#About">About</a></li>
-					<li><a href="#Sosial">Help</a></li>
-					<li><a href="" class="tbl-hijau">Log out</a></li>
-				</ul>
+			<ul>
+					<li><a href="home.php">Home</a></li>
+					<li><a href="home.php/#Contact">Contact</a></li> 
+					<li><a href="home.php/#About">About</a></li>
+					<li><a href="home.php/#Sosial">Help</a></li>
+					<li><a href="logout.php" class="tbl-hijau">Logout</a></li>
+			</ul>
 			</div>
 		</div>
 	</nav>
@@ -90,7 +91,7 @@ if( isset($_POST["submit"]) ) {
 				<input size="40" autofocus placeholder="Masukkan Email.." autocomplete="off" class="form-control  " style="width:30%; "  type="file" name="gambar" id="gambar">
 			</li>
 			<li>
-				<button type="submit" name="submit">Ubah Data!</button>
+				<button type="submit" name="submit" class="btn btn-primary me-2 me-auto mt-4">Ubah Data!</button>
 			</li>
 		</ul>
 
@@ -98,7 +99,7 @@ if( isset($_POST["submit"]) ) {
 
 	<div id="copyright" class="footer" style="background-color:rgb(104, 131, 140);">
         <div class="wrapper">
-            &copy; 2022. <b>Kelompok-2</b> All Right Reserve
+            &copy; 2022. <b>Kelompok-2</b> All Right reservedd
         </div>
     </div>
 

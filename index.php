@@ -137,7 +137,7 @@ if( isset($_POST["cari"]) ) {
             </div>
 			<div id="copyright">
 				<div class="wrapper">
-					&copy; 2022. <b>Kelompok-2</b> All Right Reserve
+					&copy; 2022. <b>Kelompok-2</b> All Right reserved
 				</div>
 			</div>
         </div>

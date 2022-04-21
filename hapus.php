@@ -1,6 +1,8 @@
 <?php 
 require 'functions.php';
-if(isset($_SESSION['loggedIn']) == true){ 
+session_start();
+
+if(isset($_SESSION['loggedIn']) != true){ 
     header("Location: index.php");
 }
 

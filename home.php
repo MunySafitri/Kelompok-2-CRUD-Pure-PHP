@@ -2,6 +2,10 @@
 require 'functions.php';
 session_start();
 
+if(isset($_SESSION['loggedIn']) != true){ 
+    header("Location: index.php");
+}
+
 //algoritma untuk pagination
 $jumlahDataPerhalaman = 4;
 $jumlahData = count(query("SELECT * FROM mahasiswa"));//jumlah datanya
@@ -149,7 +153,7 @@ if( isset($_POST["cari"]) ) {
             </div>
 			<div id="copyright">
 				<div class="wrapper">
-					&copy; 2022. <b>Kelompok-2</b> All Right Reserve
+					&copy; 2022. <b>Kelompok-2</b> All Right reserved
 				</div>
 			</div>
         </div>

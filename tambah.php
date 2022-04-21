@@ -1,5 +1,6 @@
 <?php
 require 'functions.php';
+session_start();
 
 if(isset($_SESSION['loggedIn']) != true){ 
     header("Location: index.php");
@@ -44,13 +45,13 @@ if( isset($_POST["submit"]) ) {
 		<div class="wrapper">
 			<div class="logo"><a href="">Data Mahasiswa</a></div>
 			<div class="menu">
-				<ul>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="#Contact">Contact</a></li> 
-					<li><a href="#About">About</a></li>
-					<li><a href="#Sosial">Help</a></li>
-					<li><a href="" class="tbl-hijau">Log out</a></li>
-				</ul>
+			<ul>
+					<li><a href="home.php">Home</a></li>
+					<li><a href="home.php/#Contact">Contact</a></li> 
+					<li><a href="home.php/#About">About</a></li>
+					<li><a href="home.php/#Sosial">Help</a></li>
+					<li><a href="logout.php" class="tbl-hijau">Logout</a></li>
+			</ul>
 			</div>
 		</div>
 	</nav>
@@ -80,7 +81,7 @@ if( isset($_POST["submit"]) ) {
 					<input size="40"  autocomplete="off" class="form-control  " style="width:30%; " type="file" name="gambar" id="gambar">
 				</li>
 				<li>
-					<button type="submit" name="submit" class="btn btn-teal me-2 me-auto mb-2 " style="background:green;color:white ">Tambah Data!</button>
+					<button type="submit" name="submit" class="btn btn-success me-2 me-auto mt-4">Tambah Data!</button>
 				</li>
 			</ul>
 
