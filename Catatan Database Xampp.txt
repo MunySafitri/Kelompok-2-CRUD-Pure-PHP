@@ -11,10 +11,12 @@ create database CRUD;
 
 USE CRUD;
 
-CREATE TABLE `user` (  `id_user` int(11) NOT NULL,  `username` varchar(9) NOT NULL,  `password` varchar(128) NOT NULL);
+CREATE TABLE `mahasiswa` (  `id` int(11) NOT NULL,  `nrp` varchar(9) NOT NULL,  `nama` varchar(128) NOT NULL,  `email` varchar(128) DEFAULT NULL,  `jurusan` varchar(64) NOT NULL,  `gambar` varchar(64) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `mahasiswa` (`id`, `nrp`, `nama`, `email`, `jurusan`, `gambar`) VALUES(1, '2008107064', 'Muny Safitri', 'munysafitri@gmail.com', 'Informatika', 'muny.jpeg'),
-    (2, '2008107022', 'Safira', 'safiraa@gmail.com', 'Informatika', 'sapii.jpeg');
+    (2, '2008107022', 'Safira', 'safiraa@gmail.com', 'Informatika', 'sapii.jpeg'),
+    (3, '2008107021', 'Naufal Alkhalis', 'nopal@gmail.com', 'Informatika', 'nopal.jpeg'),
+    (4, '2008107092', 'Razan Fawwaz', 'zan@gmail.com', 'Informatika', 'zan.jpeg');
 
 
 Note

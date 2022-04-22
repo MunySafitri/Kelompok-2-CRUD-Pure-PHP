@@ -1,6 +1,7 @@
 <?php 
 require 'functions.php';
-session_start();
+
+
 
 //algoritma untuk pagination
 $jumlahDataPerhalaman = 4;
@@ -60,9 +61,9 @@ if( isset($_POST["cari"]) ) {
 <div class="container">
 	<form action="" method="post" class="nosubmit position-relative">
 
-		<input type="text" name="keyword" size="40" autofocus placeholder="Masukkan keyword pencarian.." autocomplete="off" class="form-control  " style="width:30%; float:left">
+		<input type="text" name="keyword" size="40" autofocus placeholder="Masukkan keyword pencarian.." autocomplete="off" class="form-control  " style="width:30%; float:left; ">
 		
-		<button type="submit" name="cari" class="btn btn-teal me-2 me-auto mb-2 " style="background:green;color:white ">Cari!</button>
+		<button type="submit" name="cari" class="btn btn-info me-2 me-auto mb-2 " style="background:green;color:white ">Cari!</button>
 		
 		<br><br>
 		<a>Login terlebih dahulu untuk menambahkan data!</a>

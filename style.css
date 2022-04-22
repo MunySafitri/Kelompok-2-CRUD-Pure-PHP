@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     list-style: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -10,14 +11,15 @@ body {
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
 }
-li{
+
+li {
     list-style: none;
 }
+
 .wrapper {
     width: 1200px;
     margin: auto;
     position: relative;
-   
 }
 
 .logo a {
@@ -26,8 +28,6 @@ li{
     float: left;
     font-family: Courier;
     color: #09aea6;
-
-
 }
 
 .menu {
@@ -35,19 +35,19 @@ li{
 }
 
 nav {
-width: 100%;
-margin: auto;
-display: flex; 
-line-height: 80px;
-position: sticky;
-position: -webkit-sticky;
-top: 0;
-background-color: #ffff;
-z-index: 1;
-border-bottom: 1px solid #07a199;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #ffff;
+    z-index: 1;
+    border-bottom: 1px solid #07a199;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -56,23 +56,22 @@ nav ul{
 
 nav ul li {
     float: left;
-
 }
 
 nav ul li a {
-color: black;
-font-weight: bold;
-text-align: center;
-padding: 0px 16px 0px 16px;
-text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
-a.tbl-hijau{
-    background-color:  #0dccc6;
+a.tbl-hijau {
+    background-color: #0dccc6;
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px;
@@ -81,18 +80,17 @@ a.tbl-hijau{
     font-weight: bold;
 }
 
-a.tbl-hijau:hover{
-   background:#07a199;
-   text-decoration: none;
+a.tbl-hijau:hover {
+    background: #07a199;
+    text-decoration: none;
 }
 
-#contact{
+#contact {
     background-color: rgb(104, 131, 140);
-    padding: 50px 0px ;
-
+    padding: 50px 0px;
 }
 
-.footer{
+.footer {
     width: 100%;
     position: relative;
     display: flex;
@@ -100,13 +98,12 @@ a.tbl-hijau:hover{
     margin: auto;
 }
 
-.footer-section{
+.footer-section {
     width: 25%;
     margin: 0 auto;
-
 }
 
-h3{
+h3 {
     font-family: comic 'Gill Sans';
     font-weight: 800;
     font-size: 30px;
@@ -114,10 +111,9 @@ h3{
     color: #ffff;
     width: 100%;
     line-height: 50px;
-    
 }
 
-#copyright{
+#copyright {
     text-align: center;
     width: 100%;
     padding: 59px 0px;
@@ -130,36 +126,34 @@ h3{
     }
 }
 
-
-.nav menu{
+.nav menu {
     width: 100%;
     margin: 0;
-
 }
 
-.nav menu ul{
+.nav menu ul {
     text-align: center;
     margin: auto;
     line-height: 60px;
-
 }
 
-.nav menu ul li{
+.nav menu ul li {
     display: inline-block;
     float: none;
 }
-*{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-h1,p{
+
+h1,
+p {
     text-align: center;
     color: black;
     font-weight: bold;
     padding: 10px 13px;
     font-weight: bold;
     bottom: 200px;
-    
 }
 
 .table1 {
@@ -171,18 +165,18 @@ h1,p{
     text-align: center;
 }
 
-tr{
+tr {
     background-color: ffff;
 }
 
-.table1 tr th{
+.table1 tr th {
     background: #35A9DB;
     color: #fff;
     font-weight: normal;
 }
 
-.tbh{
-    background-color:  #0dcc13;
+.tbh {
+    background-color: #0dcc13;
     border-radius: 20px;
     margin-top: 20px;
     padding: 10px 13px;
@@ -192,8 +186,8 @@ tr{
     bottom: 200px;
 }
 
-.ubah{
-    background-color:  #0dcc13;
+.ubah {
+    background-color: #0dcc13;
     border-radius: 20px;
     margin-top: 20px;
     padding: 10px 13px;
@@ -202,7 +196,8 @@ tr{
     font-weight: bold;
     bottom: 200px;
 }
-.hapus{
+
+.hapus {
     background-color: orange;
     border-radius: 20px;
     margin-top: 20px;
@@ -212,4 +207,8 @@ tr{
     font-weight: bold;
     bottom: 200px;
     bottom: 20px;
+}
+
+.input-group {
+    padding-bottom: 20px;
 }
